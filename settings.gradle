@@ -1,0 +1,4 @@
+rootProject.name = 'jdbc'
+include 'demo'
+include 'homework'
+

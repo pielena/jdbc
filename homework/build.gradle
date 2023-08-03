@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'ru.otus'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':demo')
+
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.4.8'
+    implementation group: 'org.flywaydb', name: 'flyway-core', version: '9.21.1'
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.6.0'
+}
+
+test {
+}
